@@ -8,7 +8,7 @@
 #define ACK                         0b00000100
 #define ERR                         0b00001000
 #define FIN                         0b00010000
-
+;
 #define BIT(x)                      (0x01 << (x))
 #define bit_set(port,bit)           ((port) |= BIT(bit))
 #define bit_clear(port,bit)         ((port) &= ~BIT(bit))
