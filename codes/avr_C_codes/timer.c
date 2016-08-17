@@ -23,7 +23,7 @@ ISR(TIMER1_COMPA_vect) {
     
     //PORTB ^= (1<<0);
     TIFR |= (1<<OCF1A);                     // CLEARING THE OCFIA INTERRUPT FLAG BY STRANGELY
-    // WRITING 1 TO IT
+                                            // WRITING 1 TO IT
     
     timer_interrupt_service_routine();
 }

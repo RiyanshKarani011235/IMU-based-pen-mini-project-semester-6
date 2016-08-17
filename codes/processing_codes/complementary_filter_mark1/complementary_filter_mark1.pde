@@ -64,7 +64,7 @@ void setup() {
   size(window_width,window_height);
   draw_x_axis();
   println(avr.list());
-  String portname = Serial.list()[3];
+  String portname = Serial.list()[2];
   println(portname);
   avr = new Serial(this,portname,9600);
   avr.clear();
@@ -299,8 +299,8 @@ void draw() {
   
   //pitch = (gyro_x*sampling_time);
   
-  //println(angle_acc_x);
-  //println(gyro_data[1]);
+  println(angle_acc_x);
+  println(gyro_data[1]);
   
   //plot1(gyro_data[1]);
   //integrator_plot(gyro_data[1]);

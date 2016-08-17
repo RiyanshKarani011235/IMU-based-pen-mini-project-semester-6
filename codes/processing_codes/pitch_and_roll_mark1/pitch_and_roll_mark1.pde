@@ -75,7 +75,7 @@ void setup() {
   size(window_width,window_height);
   draw_x_axis();
   println(avr.list());
-  String portname = Serial.list()[3];
+  String portname = Serial.list()[2];
   println(portname);
   avr = new Serial(this,portname,9600);
   avr.clear();
